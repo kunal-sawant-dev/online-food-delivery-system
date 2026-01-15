@@ -1,0 +1,110 @@
+.my-orders {
+    padding: 40px 5%;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .my-orders h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .my-orders-orders {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 18px 25px;
+    border: 1px solid #ff5c5c;
+    border-left: 4px solid #ff5c5c;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(255, 92, 92, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .my-orders-orders:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 92, 92, 0.2);
+  }
+  
+  .my-orders-orders img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+  }
+  
+  .my-orders-orders p {
+    margin: 0 10px 10px 0;
+    font-size: 16px;
+    color: #444;
+    max-width: 200px;
+    word-wrap: break-word;
+  }
+  
+  .my-orders-orders p span {
+    color: red;
+    font-size: 14px;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  .my-orders-orders p b {
+    color: red;
+    font-weight: 600;
+  }
+  
+  .my-orders-orders button {
+    background-color: #ececec;
+    color: #333;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .my-orders-orders button:hover {
+    background-color: #ff5c5c;
+    color: #fff;
+  }
+  
+  
+  /* ✅ Responsive Styling */
+  @media (max-width: 900px) {
+    .my-orders-orders {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 10px;
+      padding: 15px;
+      font-size: 12px;
+    }
+  
+    .my-orders-orders img {
+      grid-column: span 3;
+      margin: auto;
+    }
+  
+    .my-orders-orders p {
+      font-size: 12px;
+      margin: 0;
+    }
+  
+    .my-orders-orders button {
+      grid-column: span 3;
+      font-size: 10px;
+      padding: 6px 10px;
+      margin-top: 8px;
+    }
+  }
+  
